@@ -192,7 +192,7 @@ def setup_page() -> None:
     """
     Configure the Streamlit page layout and header.
     """
-    st.set_page_config(page_title="Air Quality Analysis Agent", page_icon="🌍", layout="wide")
+    st.set_page_config(page_title="AQI Analysis Bot", page_icon="🌍", layout="wide")
     st.markdown(
         """
         <style>
@@ -323,7 +323,7 @@ def main() -> None:
         st.download_button(
             "💾 Download Recommendations",
             data=st.session_state["recommendations"],
-            file_name=f"aqi_recommendations_{user_details.city}_{user_details.state}.txt",
+            file_name=f"aqi_recommendations_{user_details.city.lower()}_{user_details.state.lower()}.txt",
             mime="text/plain"
         )
 
