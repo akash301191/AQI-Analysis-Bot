@@ -34,7 +34,7 @@ AQI-Analysis-Bot/
 
 1. **Clone the repository** (or download it):
    ```bash
-   git clone https://github.com/yourusername/AQI-Analysis-Bot.git
+   git clone https://github.com/akash301191/AQI-Analysis-Bot.git
    cd AQI-Analysis-Bot
    ```
 
